@@ -1,0 +1,166 @@
+/* styles/global.css */
+
+/* Variáveis CSS para cores e tamanhos */
+:root {
+    --primary-color: #7C4DFF;
+    --secondary-color: #f457bf;
+    --background-color: #f4f2e6;
+    --text-color: #000000;
+    --footer-bg-color: #7C4DFF;
+    --footer-text-color: white;
+    --font-family: "lato", sans-serif;
+    --font-size-base: 15px;
+}
+
+/* Reset básico */
+body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    margin: 0;
+    padding: 0;
+    color: var(--text-color);
+}
+
+/* Header */
+header {
+    background-image: url('img/bg-header.png'); 
+    background-size: contain;
+    background-position: center;
+    background-repeat: repeat;
+    text-align: center;
+    padding: 20px;
+    font-size: 25px;
+    position: relative;
+    font-family: "raleway", serif;
+    font-size: 30px;
+}
+
+.logo img {
+    width: 400px;
+    max-width: 100%; /* Garante que a logo seja responsiva */
+    height: auto;
+    position: relative;
+    z-index: 2;
+}
+
+/* Nav */
+nav ul {
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+    font-family: var(--font-family);
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+    font-family: var(--font-family)
+}
+
+nav ul li a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    transition: background-color 0.3s ease;
+    font-family: var(--font-family);
+}
+
+nav ul li a i {
+    margin-right: 8px;
+}
+
+/* Dropdown */
+nav ul li .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border-radius: 4px;
+    font-family: var(--font-family);
+}
+
+nav ul li .dropdown-content li {
+    display: block;
+    text-align: left;
+}
+
+nav ul li .dropdown-content li a {
+    color: var(--text-color);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+
+nav ul li .dropdown-content li a:hover {
+    background-color: #f1f1f1;
+}
+
+nav ul li:hover .dropdown-content {
+    display: block;
+}
+
+nav ul li:hover > a {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+/* Footer */
+footer {
+    background-color: var(--footer-bg-color);
+    color: var(--footer-text-color);
+    text-align: center;
+    padding: 20px;
+    margin-top: 20px;
+    font-family: var(--font-family);
+}
+
+footer .redes-sociais a {
+    color: var(--footer-text-color);
+    margin: 0 10px;
+    font-size: 20px;
+    transition: color 0.3s ease;
+}
+
+footer .redes-sociais a:hover {
+    color: var(--secondary-color);
+    font-family: var(--font-family);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .logo img {
+        width: 300px; /* Ajuste para telas menores */
+    }
+    
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    nav ul li .dropdown-content {
+        position: static; /* Dropdown fica abaixo do item */
+    }
+}
+
+@media (max-width: 480px) {
+    .logo img {
+        width: 200px; /* Ajuste para telas muito pequenas */
+    }
+
+    header {
+        font-size: 20px;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+}

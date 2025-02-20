@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/estilo-global.css">
+    <link rel="stylesheet" href="src/estilos-produtos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="src/img/favicon-32x32.png">
+
+    <title>Produtos - Pippo Designs</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="src/img/logo-pippo-designs.png" alt="Logo da Pippo Designs">
+        </div>
+        <p>Papelaria Lúdica e Personalizada</p>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+            <li><a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
+            <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+            <li class="dropdown">
+                <a href="produtos.html"><i class="fas fa-box"></i> Produtos</a>
+                <ul class="dropdown-content">
+                    <li><a href="kit-festa.html">Kit Festa</a></li>
+                    <li><a href="encadernacao.html">Encadernação</a></li>
+                    <li><a href="maternidade-incrivel.html">Maternidade Incrível</a></li>
+                    <li><a href="volta-as-aulas.html">Volta às Aulas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="produtos">
+            <h2>Nossos Produtos</h2>
+
+            <!-- Categoria: Kit Festa -->
+            <div class="categoria">
+                <h3>Kit Festa</h3>
+                <div class="produtos-container">
+                    <div class="produto-card">
+                        <img src="src/img/product-img.jpeg" alt="Kit Festa 1 - Personalizado">
+                        <h4>Kit Festa 1</h4>
+                        <p>Kit completo para festas infantis, incluindo bandeirinhas, toppers e muito mais.</p>
+                        <a href="kit-festa.html" class="btn">Ver Detalhes</a>
+                    </div>
+                    <div class="produto-card">
+                        <img src="src/img/product-img.jpeg" alt="Kit Festa 2 - Personalizado">
+                        <h4>Kit Festa 2</h4>
+                        <p>Kit com tema personalizado para aniversários e comemorações especiais.</p>
+                        <a href="kit-festa.html" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria: Encadernação -->
+            <div class="categoria">
+                <h3>Encadernação</h3>
+                <div class="produtos-container">
+                    <div class="produto-card">
+                        <img src="src/img/product-img.jpeg" alt="Encadernação Personalizada">
+                        <h4>Encadernação 1</h4>
+                        <p>Encadernação artesanal para agendas, cadernos e álbuns de fotos.</p>
+                        <a href="encadernacao.html" class="btn">Ver Detalhes</a>
+                    </div>
+                    <div class="produto-card">
+                        <img src="src/img/product-img.jpeg" alt="Encadernação Criativa">
+                        <h4>Encadernação 2</h4>
+                        <p>Encadernação com temas exclusivos para presentear.</p>
+                        <a href="encadernacao.html" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria: Maternidade Incrível -->
+            <div class="categoria">
+                <h3>Maternidade Incrível</h3>
+                <div class="produtos-container">
+                    <div class="produto-card">
+                        <img src="src/img/product-img.jpeg" alt="Maternidade Incrível - Kit 1">
+                        <h4>Maternidade Incrível 1</h4>
+                        <p>Kit especial para mamães, com itens personalizados para o bebê.</p>
+                        <a href="maternidade-incrivel.html" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Categoria: Volta às Aulas -->
+            <div class="categoria">
+                <h3>Volta às Aulas</h3>
+                <div class="produtos-container">
+                    <div class="produto-card">
+                        <img src="src/img/product-img.jpeg" alt="Volta às Aulas - Kit 1">
+                        <h4>Volta às Aulas 1</h4>
+                        <p>Kit completo para o retorno às aulas, com itens personalizados.</p>
+                        <a href="volta-as-aulas.html" class="btn">Ver Detalhes</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Pippo Designs. Todos os direitos reservados.</p>
+        <p>
+            <i class="fas fa-phone"></i> +55 11 98755-0497 |
+            <i class="fas fa-envelope"></i> pippodesigns@icloud.com
+        </p>
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/pippodesigns/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.facebook.com/pippoarg/?_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="http://wa.me/5511987550497" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script src="js/scripts.js"></script>
+</body>
+</html>
