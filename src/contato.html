@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato - Pippo Designs</title>
+    <link rel="stylesheet" href="src/estilo-global.css">
+    <link rel="stylesheet" href="src/estilos-contato.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" href="src/img/favicon-32x32.png">
+    <script src="scripts.js"></script>
+
+
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="src/img/logo-pippo-designs.png" alt="Logo da Pippo Designs">
+        </div>
+        <p>Papelaria Lúdica e Personalizada</p>
+    </header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <ul class="menu">
+            <li><a href="index.html"><i class="fa-solid fa-house"></i> Início</a></li>
+            <li><a href="sobre.html"><i class="fas fa-info-circle"></i> Sobre</a></li>
+            <li><a href="contato.html"><i class="fas fa-envelope"></i> Contato</a></li>
+            <li>
+                <a href="produtos.html"><i class="fas fa-box"></i> Produtos</a>
+                <ul class="dropdown-content">
+                    <li><a href="kit-festa.html">Kit Festa</a></li>
+                    <li><a href="encadernacao.html">Encadernação</a></li>
+                    <li><a href="maternidade-incrivel.html">Maternidade Incrível</a></li>
+                    <li><a href="volta-as-aulas.html">Volta às Aulas</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+    <main>
+        <section class="contato">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida, sugestão ou quer fazer um pedido personalizado? Entre em contato conosco!</p>
+            
+            <div class="contato-info">
+                <div class="info-item">
+                    <i class="fas fa-phone"></i>
+                    <p>+55 11 98755-0497</p>
+                </div>
+                <div class="info-item">
+                    <i class="fas fa-envelope"></i>
+                    <p>pippodesigns@icloud.com</p>
+                </div>
+            </div>
+            <form class="formulario-contato" action="#" method="POST">
+                <div class="form-group">
+                    <label for="nome">Nome:</label>
+                    <input type="text" id="nome" name="nome" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone">
+                </div>
+                <div class="form-group">
+                    <label for="mensagem">Mensagem:</label>
+                    <textarea id="mensagem" name="mensagem" rows="5" required></textarea>
+                </div>
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Pippo Designs. Todos os direitos reservados.</p>
+        <p>
+            <i class="fas fa-phone"></i> +55 11 98755-0497 |
+            <i class="fas fa-envelope"></i> pippodesigns@icloud.com
+        </p>
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/pippodesigns/" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="https://web.facebook.com/pippoarg/?_rdc=1&_rdr#" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="http://wa.me/5511987550497" target="_blank"><i class="fab fa-whatsapp"></i></a>
+        </div>
+    </footer>
+    <script>
+    // Função toggleMenu
+        function toggleMenu() {
+            const menu = document.querySelector('.menu');
+            menu.classList.toggle('active');
+        }
+
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuIcon = document.querySelector('.menu-icon');
+            menuIcon.addEventListener("click", toggleMenu);
+        });
+        </script>
+</body>
+</html>

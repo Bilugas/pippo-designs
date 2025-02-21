@@ -1,0 +1,23 @@
+main {
+    padding: 20px;
+    font-family: var(--font-family); 
+}
+
+h2 {
+    color: #FF4081;
+    font-family: var(--font-family);
+}
+
+.sobre {
+    background-color: #FFFDE7;
+    padding: 20px;
+    font-family: var(--font-family); 
+}
+
+.sobre p {
+    font-size: 1.2em;
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-family: var(--font-family);
+}
